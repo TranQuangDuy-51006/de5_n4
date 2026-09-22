@@ -952,7 +952,7 @@ nextBtn.onclick = () => {
     render();
   }
 };
-resetBtn.onclick = resetQuiz;
+if (resetBtn) resetBtn.onclick = resetQuiz;
 
 document.querySelectorAll(".filter").forEach((btn) =>
   btn.addEventListener("click", () => {
